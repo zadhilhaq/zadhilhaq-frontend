@@ -43,7 +43,7 @@ const Home = () => {
             <td>{product.name}</td>
             <td className="text-right">{product.price}</td>
             <td className="text-center">
-              <Link to="/detail" className="btn btn-sm btn-info">Detail</Link>
+              <Link to={`/detail/${product._id}`} className="btn btn-sm btn-info">Detail</Link>
               <Link to={`/edit/${product._id}`} className="btn btn-sm btn-warning">Edit</Link>
               <button onClick={()=> deleteData(product._id)} className="btn btn-sm btn-danger">Delete</button>
             </td>
